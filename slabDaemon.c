@@ -579,7 +579,7 @@ int main(int argc, char *argv[])
 	close(STDERR_FILENO);
 	
 	fp = fopen ("SLABLog.txt", "a");
-	fprintf(fp,"TIMESTAMP;OBJS;ACTIVE;USE;OBJ SIZE;SLABS;OBJ/SLAB;CACHE SIZE;NAME;S;N;VarS;Z;Trend\n");
+	fprintf(fp,"TIMESTAMP;ACTIVEOBJS;OBJSIZE;SLAB NAME;ACT;CT;VT;FVT;SVT;ZT;TrendTOTAL;ACM;CM;VM;FVM;SVM;ZM;TRENDMIDTERM;ACS;CS;VS;FVS;SVS;ZS;TRENDSHORTTERM\n");
 	fclose(fp);
 	slab_mk_values=NULL;
 
